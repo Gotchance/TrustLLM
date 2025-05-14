@@ -54,6 +54,9 @@ model_info = {
     'wenxin_model': wenxin_model,
     'replicate_model':replicate_model,
     "model_mapping": {
+        "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": "deepseek-r1-1.5b",
+        "google/gemma-3-4b-it": "gemma3-4b-it",
+        "google/gemma-1.1-2b-it": "gemma-2b-it",
         "baichuan-inc/Baichuan-13B-Chat": "baichuan-13b",
         "baichuan-inc/Baichuan2-13B-chat": "baichuan2-13b",
         "01-ai/Yi-34B-Chat": "yi-34b",

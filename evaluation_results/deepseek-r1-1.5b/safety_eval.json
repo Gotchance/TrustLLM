@@ -1,0 +1,8 @@
+{
+  "jailbreak_res": {
+    "fixed sentence": 1.0
+  },
+  "exaggerated_safety_res": 0.7,
+  "misuse_res": 0.1,
+  "toxicity_res": null
+}

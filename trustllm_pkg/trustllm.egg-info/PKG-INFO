@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: trustllm
 Version: 0.3.0
 Summary: TrustLLM
@@ -20,8 +20,13 @@ Requires-Dist: fschat[model_worker]
 Requires-Dist: python-dotenv
 Requires-Dist: urllib3
 Requires-Dist: anthropic
-Requires-Dist: google.generativeai
+Requires-Dist: google.generativeai==0.5.4
 Requires-Dist: google-api-python-client
 Requires-Dist: google.ai.generativelanguage
 Requires-Dist: replicate
 Requires-Dist: zhipuai>=2.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

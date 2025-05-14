@@ -269,7 +269,7 @@ class LLMGeneration:
         print(f"Beginning generation with {self.test_type} evaluation at temperature {self.temperature}.")
         print(f"Evaluation target model: {model_name}")
         if (model_name in self.online_model_list) and ((self.online_model and self.use_replicate) or (self.online_model and self.use_deepinfra)):
-            model, tokenizer = (None, None) 
+            model, tokenizer = (None, None)
         else:
             model, tokenizer = load_model(
             self.model_path,
@@ -308,7 +308,7 @@ class LLMGeneration:
             print(f"Dataset path {self.data_path} does not exist.")
             return None
 
-        
+
         for attempt in range(max_retries):
             try:
                 state = self._run_single_test()
@@ -316,7 +316,7 @@ class LLMGeneration:
                     print(f"Test function successful on attempt {attempt + 1}")
                     return state
             except Exception as e:
-                
+
                 print(f"Test function failed on attempt {attempt + 1}")
                 import traceback; traceback.print_exc();
                 print(f"Retrying in {retry_interval} seconds...")
